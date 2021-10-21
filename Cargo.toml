@@ -1,6 +1,6 @@
 [package]
 name = "to-html"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Ludwig Stecher <ludwig.stecher@gmx.de>"]
 description = "Render a terminal with ANSI colors as HTML"
 categories = ["command-line-utilities"]
@@ -17,7 +17,7 @@ exclude = ["docs"]
 members = ["crates/*"]
 
 [dependencies]
-ansi-to-html = { path = "./crates/ansi-to-html", version = "0.1" }
+ansi-to-html = { path = "./crates/ansi-to-html" }
 anyhow = "1"
 
 [profile.dev.package."*"]
