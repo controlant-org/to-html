@@ -1,6 +1,6 @@
 [package]
 name = "to-html"
-version = "0.1.2"
+version = "0.2.0"
 authors = ["Ludwig Stecher <ludwig.stecher@gmx.de>"]
 description = "Render a terminal with ANSI colors as HTML"
 categories = ["command-line-utilities"]
@@ -16,15 +16,9 @@ exclude = ["docs"]
 [workspace]
 members = ["crates/*"]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
-fake-tty = { path = "./crates/fake-tty", version = "0.3" }
 ansi-to-html = { path = "./crates/ansi-to-html", version = "0.1" }
-clap = "2"
-dirs-next = "2"
-logos = "0.11"
-thiserror = "1"
+anyhow = "1"
 
 [profile.dev.package."*"]
 opt-level = 1
